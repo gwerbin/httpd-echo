@@ -1,6 +1,37 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# httpd-echo
+# Copyright (C) 2017 rpatterson
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# httpd-echo
+# Copyright (C) 2021 Greg Werbin
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 """ A Simple Python HTTP server that echoes the request. """
 
 import socket
@@ -117,6 +148,9 @@ def main(args=None, default_port=8000):
             (args.address, int(port)), EchoHTTPRequestHandler
         )
 
+    print("httpd-echo, Copyright © 2017 rpatterson, 2021 Greg Werbin")
+    print("This program comes with ABSOLUTELY NO WARRANTY.")
+    print("This is Free Software, and you are welcome to redistribute it under certain conditions.")
     print("Echoing HTTP at http://{0}:{1} ...".format(args.address, port))
     httpd.serve_forever()
 

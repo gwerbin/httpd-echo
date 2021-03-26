@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
 import os
 
-
 HERE = os.path.dirname(__file__)
 README_PATH = os.path.join(HERE, "README.rst")
 
@@ -11,7 +10,7 @@ with open(README_PATH) as fp:
 setup(
     name="httpd-echo",
     version="0.1.1",
-    license="GPL",
+    license="AGPL-3.0-or-later",
     url="https://github.com/rpatterson/httpd-echo",
     description="A Simple Python HTTP server that echos the request in the response",
     long_description=readme,

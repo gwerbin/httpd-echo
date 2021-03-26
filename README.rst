@@ -1,10 +1,15 @@
 ==========
 httpd-echo
 ==========
-A Simple Python HTTP server that echos the request in the response
-------------------------------------------------------------------
 
-Provide a simple HTTP server that tries to echo the request back in the
+.. image:: https://www.gnu.org/graphics/agplv3-88x31.png
+   :alt: AGPLv3 logo; "Free as in freedom."
+   :align: right
+
+A Simple Python HTTP server that echoes the request
+---------------------------------------------------
+
+Provides a simple HTTP server that tries to echo the request back in the
 response in the most sensible way possible.  This can be useful for, testing,
 debugging, stubbing out a local server in systems that have a hard-coded
 assumption of making HTTP requests, etc.::
@@ -73,6 +78,7 @@ Shutdown the server::
 ----------------------------
 TODO
 ----------------------------
+
 Features for future releases
 ____________________________
 
