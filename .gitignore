@@ -1,3 +1,7 @@
-/.eggs/
-/.tox/
-/dist/
+.eggs/
+.tox/
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.py[cod]
