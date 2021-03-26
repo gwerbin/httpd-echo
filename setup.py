@@ -10,7 +10,7 @@ with open(README_PATH) as fp:
 
 setup(
     name="httpd-echo",
-    version="0.1",
+    version="0.1.1",
     license="GPL",
     url="https://github.com/rpatterson/httpd-echo",
     description="A Simple Python HTTP server that echos the request in the response",
