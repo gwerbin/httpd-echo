@@ -18,7 +18,6 @@ from six.moves import BaseHTTPServer
 
 class EchoHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     """ A Simple Python HTTP server that echos the request. """
-
     def do_GET(self):
         """ Echo a request without a body. """
         message = self.get_message()
